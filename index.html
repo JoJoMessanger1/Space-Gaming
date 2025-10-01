@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>PacRocket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="game-container"></div>
+
+  <div id="notes-overlay" class="hidden">
+    <div id="notes-panel">
+      <button id="close-notes">✕</button>
+      <h2>Geheime Notizen</h2>
+
+      <div id="pw-setup" class="pw-box">
+        <label>Neues Passwort:</label>
+        <input id="pw-new" type="password">
+        <button id="pw-set">Festlegen</button>
+      </div>
+
+      <div id="pw-enter" class="pw-box hidden">
+        <label>Passwort eingeben:</label>
+        <input id="pw-enter-input" type="password">
+        <button id="pw-unlock">Freischalten</button>
+      </div>
+
+      <div id="notes-area" class="hidden">
+        <textarea id="note-text" placeholder="Deine Notizen..."></textarea>
+        <button id="save-note">Speichern</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
